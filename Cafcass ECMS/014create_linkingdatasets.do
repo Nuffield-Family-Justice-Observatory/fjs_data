@@ -107,7 +107,7 @@ foreach v of local varbase  {
 	replace motherid=RELATEDPERSON_ID_PE`v' if (RELATIONSHIPTYPE_ID`v'==1 & GENDER`v'=="Female") & motherid==.
 	replace motherdob=WEEKOFBIRTH`v' if (RELATIONSHIPTYPE_ID`v'==1 & GENDER`v'=="Female") & motherdob==.
 	replace mother_ethnicity=ETHNICITYTYPE_ID`v' if (RELATIONSHIPTYPE_ID`v'==1 & GENDER`v'=="Female") & mother_ethnicity==.
-	replace mother_disability=hasdisability`v' if (RELATIONSHIPTYPE_ID`v'==1 & GENDER`v'=="Female") & mother_disabiity==.
+	replace mother_disability=hasdisability`v' if (RELATIONSHIPTYPE_ID`v'==1 & GENDER`v'=="Female") & mother_disability==.
 	replace mother_nationality=NATIONALITYTYPE_ID`v'  if (RELATIONSHIPTYPE_ID`v'==1 & GENDER`v'=="Female") & mother_nationality==.
 	replace mother_language=LANGUAGETYPE_ID`v' if (RELATIONSHIPTYPE_ID`v'==1 & GENDER`v'=="Female") & mother_language==.
 	replace mother_religion=RELIGIONTYPE_ID`v' if (RELATIONSHIPTYPE_ID`v'==1 & GENDER`v'=="Female") & mother_religion==.
@@ -133,7 +133,7 @@ foreach v of local varbase  {
 	replace fatherid=RELATEDPERSON_ID_PE`v' if (RELATIONSHIPTYPE_ID`v'==1 & GENDER`v'=="Male") & fatherid==.
 	replace fatherdob=WEEKOFBIRTH`v' if (RELATIONSHIPTYPE_ID`v'==1 & GENDER`v'=="Male") & fatherdob==.
 	replace father_ethnicity=ETHNICITYTYPE_ID`v' if (RELATIONSHIPTYPE_ID`v'==1 & GENDER`v'=="Male") & father_ethnicity==.
-	replace father_disability=hasdisability`v' if (RELATIONSHIPTYPE_ID`v'==1 & GENDER`v'=="Male") & father_disabiity==.
+	replace father_disability=hasdisability`v' if (RELATIONSHIPTYPE_ID`v'==1 & GENDER`v'=="Male") & father_disability==.
 	replace father_nationality=NATIONALITYTYPE_ID`v'  if (RELATIONSHIPTYPE_ID`v'==1 & GENDER`v'=="Male") & father_nationality==.
 	replace father_language=LANGUAGETYPE_ID`v' if (RELATIONSHIPTYPE_ID`v'==1 & GENDER`v'=="Male") & father_language==.
 	replace father_religion=RELIGIONTYPE_ID`v' if (RELATIONSHIPTYPE_ID`v'==1 & GENDER`v'=="Male") & father_religion==.
